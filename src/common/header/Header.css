@@ -44,7 +44,7 @@
 ::placeholder {
   font-size: 15px;
 }
-.search-box span {
+.search-box button {
   width: 20%;
   opacity: 0.5;
   border-left: 2px solid rgba(0, 0, 0, 0.1);
@@ -70,11 +70,14 @@
 }
 /*------search-----------*/
 .catgrories {
+  position: relative;
+  z-index: 0;
   background-color: #f6f9fc;
-  padding: 0px 30px;
+  padding: 0px 5px;
   border-radius: 5px;
   height: 6vh;
   margin-top: 5px;
+  cursor: pointer;
 }
 .catgrories span {
   margin-right: 20px;
