@@ -16,9 +16,16 @@
 .search {
   padding: 20px 0;
 }
-.search .logo img {
+.search .logo {
   width: 300px;
+  /* height: 200px; */
+}
+
+.search .logo img {
+  max-width: 70%;
+  max-height:70%;
   height: auto;
+  width: auto;
 }
 .search .width {
   width: 30%;
@@ -34,10 +41,12 @@
   text-align: center;
   font-size: 20px;
   opacity: 0.5;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-size: 17px;
 }
 .search-box input {
+  font-size:larger;
+
   width: 100%;
   padding: 10px;
 }
@@ -45,8 +54,8 @@
   font-size: 15px;
 }
 .search-box button {
+  font-weight: bold;
   width: 20%;
-  opacity: 0.5;
   border-left: 2px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
@@ -66,6 +75,7 @@
   color: #fff;
 }
 .search .f_flex {
+  height: 40px;
   justify-content: end;
 }
 /*------search-----------*/
@@ -75,7 +85,7 @@
   background-color: #f6f9fc;
   padding: 0px 5px;
   border-radius: 5px;
-  height: 6vh;
+  height: 5vh;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -116,7 +126,7 @@ header ul li a:hover {
 .search.active {
   height: 12vh;
   position: fixed;
-  top: -30px;
+  top: 0px;
   z-index: 1000;
   width: 100%;
   background-color: #fff;
@@ -128,6 +138,8 @@ header ul li a:hover {
   header ul {
     padding-top: 30px;
   }
+  .search .f_flex {
+    height: 35px;}
   .nav-links-mobile {
     position: absolute;
     display: block;
@@ -136,7 +148,7 @@ header ul li a:hover {
     left: 0;
     top: 0;
     transition: all 0.5s ease-in-out;
-    width: 60%;
+    width: 90%;
     height: 100vh;
     background-color: white;
     z-index: 888;

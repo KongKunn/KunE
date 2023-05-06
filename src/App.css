@@ -20,8 +20,13 @@ body {
   margin: auto;
 }
 .d_flex {
+  font-size: 1.5vw;  
+  flex-basis: 5%;
   display: flex;
   justify-content: space-between;
+}
+.d_flex img {
+  object-fit: cover;
 }
 .c_flex {
   display: flex;
@@ -29,7 +34,12 @@ body {
   align-items: center;
 }
 .f_flex {
+
   display: flex;
+}
+
+.f_flex-width{
+  color: #e94560;
 }
 a {
   text-decoration: none;
@@ -49,6 +59,9 @@ li {
 }
 input,
 button {
+  justify-content: center;
+  text-align: center;
+  color: #000;
   border: none;
   outline: none;
   background-color: none;
@@ -57,6 +70,7 @@ button {
   width: 50%;
 }
 .icon-circle {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   line-height: 50px;

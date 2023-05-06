@@ -18,14 +18,14 @@ const Data = {
         id: 3,
         discount: 40,
         cover: "./images/flash/flash-3.png",
-        name: "Smart Mobile Black",
+        name: "Iphone",
         price: 200,
       },
       {
         id: 4,
         discount: 40,
         cover: "./images/flash/flash-4.png",
-        name: "Smart Watch Black",
+        name: "Watch ",
         price: 50,
       },
       {
