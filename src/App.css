@@ -55,7 +55,8 @@ li {
   text-transform: capitalize;
 }
 .RText {
-  text-align-last: right;
+  display: inline;
+  /* text-align-last: right; */
 }
 input,
 button {
@@ -67,7 +68,11 @@ button {
   background-color: none;
 }
 .row {
+  display: inline-block;
   width: 50%;
+}
+.row i{
+  font-size: 15px;
 }
 .icon-circle {
   cursor: pointer;
