@@ -12,7 +12,6 @@
   font-size: 13px;
 }
 /*------head-----------*/
-/*------search-----------*/
 .search {
   padding: 20px 0;
 }
@@ -27,38 +26,8 @@
   height: auto;
   width: auto;
 }
-.search .width {
-  width: 30%;
-}
-.search-box {
-  width: 80%;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  /*padding: 10px;*/
-  border-radius: 50px;
-}
-.search-box i {
-  width: 5%;
-  text-align: center;
-  font-size: 20px;
-  opacity: 0.5;
-  padding: 10px 20px;
-  font-size: 17px;
-}
-.search-box input {
-  font-size:larger;
-  border-radius: 50%;
-  width: 100%;
-  padding: 10px;
-}
-::placeholder {
-  font-size: 15px;
-}
-.search-box button {
-  font-weight: bold;
-  width: 20%;
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
-  padding: 10px;
-}
+
+
 .cart {
   position: relative;
 }
@@ -74,8 +43,75 @@
   font-size: 12px;
   color: #fff;
 }
-.search .f_flex {
-  justify-content: end;
+/* SEACH */
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 400px;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid  rgb(176 190 197);
+  background-color: transparent;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid #0f3460;
+}
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: #0f3460;
+  color: #fff;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .2s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+.invite-btn i {
+  font-size: 150%;
+}
+.input-container input:placeholder-shown ~ .invite-btn {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
 }
 /*------search-----------*/
 .catgrories {
@@ -97,12 +133,7 @@
   margin-right: 10px;
 
 }
-/*
-.catgrories h4 {
-  font-size: 70%;
-  font-weight: 500;
-  margin-top: 12px;
-} */
+
 .catgrories h4 i {
   margin-left: 10px;
 }
@@ -129,7 +160,7 @@ header ul li a:hover {
   display: none;
 }
 .search.active {
-  height: 12vh;
+  height: 10%;
   position: fixed;
   top: 0px;
   z-index: 1000;
@@ -141,60 +172,12 @@ header ul li a:hover {
 
 @media (max-width: 768px) {
   .search .logo img{
-    max-width:  110%;
+    min-width:  30%;
     margin-left: -25px;
   }
   header ul {
     padding-top: 30px;
   }
- 
-    /* .nav-links-mobile {
-      position: absolute;
-      display: block;
-      list-style: none;
-      box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      left: 0;
-      top: 0;
-      transition: all 0.5s ease-in-out;
-      width: 60%;
-      height: 100vh;
-      background-color: white;
-      z-index: 888;
-    }
-  header ul li {
-    width: 100%;
-    transition: all 0.5s ease-in-out;
-    text-transform: uppercase;
-    line-height: 70px;
-  }
-  header .link {
-    display: none;
-  }
-  .close,
-  .open {
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    color: #ff014f;
-    display: block;
-    font-size: 25px;
-    z-index: 999;
-  }
-  .close {
-    right: 45%;
-  }
-  .close.home-btn {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    color: #ff014f;
-    border-radius: 50%;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
-  .header.active {
-    height: 10vh;
-  } */
   .catgrories.d_flex{
     font-size: 0.7rem;
   }
@@ -204,5 +187,9 @@ header ul li a:hover {
   }
   footer{
     font-size: 80%;
+  }
+  .input-container{
+    height: 2rem;
+    min-width: 80px;
   }
 }

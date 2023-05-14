@@ -38,16 +38,21 @@ const Search = ({ CartItem }) => {
             </Link>
           </div>
 
-          <div className="search-box f_flex">
-            <i className="fa fa-search"></i>
-            <input type="text" placeholder="Search and hit enter..." />
-            <button>Search</button>
+
+          <div class="input-container">
+            <input required="" placeholder="Search..." type="email"></input>
+            <button class="invite-btn" type="button">
+              <i class="fa fa-search"></i>
+            </button> 
           </div>
 
           <div className="icon f_flex width">
-          <i onClick={handleLoginClick} style={{display:"flex",alignItems: "center",fontSize:"100%", fontWeight:"bold",fontStyle: 'normal',cursor:"pointer" }}>
-  Login
-</i>
+            <button>
+            <i className="login" onClick={handleLoginClick}>
+              Login
+            </i>
+            </button>
+          
 
             <div className="cart">
               <Link to="/cart">

@@ -91,9 +91,7 @@
   }
   @media  (max-width: 768px)  {
 
-    .search-box.f-flex{
-      /* font-size: 10%; */
-    }
+  
     .mtop img{
       width: 100px;
     }

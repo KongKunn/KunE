@@ -1,25 +1,11 @@
-.login-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(5px); 
-  z-index: 9999; 
-}
-
 .main {
   margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #240046;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 720px;
+  width: 400px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 7px 7px 10px 3px #24004628;
@@ -28,14 +14,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 14px;
   padding: 24px;
 }
 
+/*checkbox to switch from sign up to login*/
 #chk {
   display: none;
 }
 
+/*Login*/
 .login {
   position: relative;
   width: 100%;
@@ -46,7 +34,7 @@
   margin: 25% 0 5%;
 }
 
-.label-login {
+label {
   color: #fff;
   font-size: 2rem;
   justify-content: center;
@@ -57,21 +45,20 @@
 }
 
 .input {
-  font-size: 2vw;
-  width: 95%;
+  width: 100%;
   height: 40px;
   background: #e0dede;
   padding: 10px;
   border: none;
   outline: none;
-  font-size:larger;
   border-radius: 4px;
 }
 
+/*Register*/
 .register {
   background: #eee;
   border-radius: 60% / 10%;
-  transform: translateY(1%);
+  transform: translateY(5%);
   transition: .8s ease-in-out;
 }
 
@@ -93,7 +80,7 @@
   transform: scale(.6);
   margin: 5% 0 5%;
 }   
-
+/*Button*/
 .form button {
   width: 85%;
   height: 40px;
