@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="header">
+      <header className="header-login">
         <div className="container d_flex">
           <div className="catgrories d_flex">
             <span class="fa-solid fa-border-all"></span>
