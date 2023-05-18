@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../../components/assets/images/logo.png";
 import { Link, useHistory } from "react-router-dom";
 import Login from "../header/ALogin"; 
-// import { red } from "@mui/material/colors";
 import Cart from "../Cart/Cart";
 
 
@@ -12,10 +11,7 @@ const Search = ({ CartItem }) => {
   const [showLogin, setShowLogin] = useState(false);
   const [hideLogin, setHideLogin] = useState(false);
 
-  window.addEventListener("scroll", function () {
-    const search = document.querySelector(".search");
-    search.classList.toggle("active", window.scrollY > 100);
-  });
+
 
   const handleLoginClick = () => {
     setHideLogin(false);

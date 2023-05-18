@@ -2,10 +2,8 @@ import React from "react"
 import "./style.css"
 
 const Cart = ({ CartItem, addToCart, decreaseQty }) => {
-  // Stpe: 7   calucate total of items
   const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.price, 0)
 
-  // prodcut qty total
   return (
     <>
       <section className='cart-items'>
